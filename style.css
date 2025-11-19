@@ -32,238 +32,304 @@ body {
     align-items: center;
 }
 
-.menu {
-    background: var(--fundo-menu);
-    padding: 1.5rem;
-    width: auto;
-    position: flex;
-    top: 0;
-    display: flex;
-    justify-content: center;
-}
+/*MENU*/
+    .menu {
+        background: var(--fundo-menu);
+        padding: 1.5rem;
+        width: auto;
+        position: flex;
+        top: 0;
+        display: flex;
+        justify-content: center;
+    }
 
-.menu nav ul {
-    list-style: none;
-    display:flex;
-    gap: 220px;
-}
+    .menu nav ul {
+        list-style: none;
+        display:flex;
+        gap: 220px;
+    }
 
-.menu button {
-    /*fonte*/
-    color: var(--botão-sub-menu);
-    font-size: 22px;
-    font-weight: bold;
-    text-shadow: var(--sombra-texto);
-    /*fundo*/
-    background: var(--botao-principal);
-    padding: 7px 28px;
-    border-radius: 20px;
-    box-shadow: var(--sombra-button) ;
-    border-style: none;
-    /*hover*/
-    transition: all 0.3s;
-    cursor: pointer;
-}
+    .menu button {
+        /*fonte*/
+        color: var(--botão-sub-menu);
+        font-size: 22px;
+        font-weight: bold;
+        text-shadow: var(--sombra-texto);
+        /*fundo*/
+        background: var(--botao-principal);
+        padding: 7px 28px;
+        border-radius: 20px;
+        box-shadow: var(--sombra-button) ;
+        border-style: none;
+        /*hover*/
+        transition: all 0.3s;
+        cursor: pointer;
+    }
 
-.menu .origin button{
-    background: var(--botao-principal-houver);
-}
+    .menu .origin button{
+        background: var(--botao-principal-houver);
+    }
 
-.menu button:hover {
-    text-shadow: var(--brilho-texto);
-    padding: 8px 32px;
-}
+    .menu button:hover {
+        text-shadow: var(--brilho-texto);
+        padding: 8px 32px;
+    }
 
-.sub_menu {
-    background: var(--sub-menu);
-    padding: 0.7rem;
-    position: flex;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
+/*SUB MENU*/
+    .sub_menu {
+        background: var(--sub-menu);
+        padding: 0.7rem;
+        position: flex;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 
-.sub_menu button {
-    /*fonte*/
-    color: var(--sub-menu);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    text-shadow: var(--sombra-texto);
-    line-height: normal;
-    /*fundo*/
-    background-color:   var(--botão-sub-menu);
-    border-radius: 15px;
-    box-shadow: var(--sombra-button);
-    border-style: none;
-    width: 165px; 
-    height: 46px;
-    /*hover*/
-    transition: all 0.3s;
-    cursor: pointer;
+    .sub_menu button {
+        /*fonte*/
+        color: var(--sub-menu);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        text-shadow: var(--sombra-texto);
+        line-height: normal;
+        /*fundo*/
+        background-color:   var(--botão-sub-menu);
+        border-radius: 15px;
+        box-shadow: var(--sombra-button);
+        border-style: none;
+        width: 165px; 
+        height: 46px;
+        /*hover*/
+        transition: all 0.3s;
+        cursor: pointer;
+    }
 
-}
+    .sub_menu button:hover {
+        text-shadow: 0 0 3px #000;
+        width: 170px; 
+        height: 47.39px;
+    }
 
-.sub_menu button:hover {
-    text-shadow: 0 0 3px #000;
-    width: 170px; 
-    height: 47.39px;
-}
+    .sub_menu .origin button{
+        background: var(--fundo-menu);
+        color: var(--botão-sub-menu);
+        font-weight: bold;
+        cursor: normal;
+    }
 
-.sub_menu nav ul {
-    list-style: none;
-    display:flex;
-    gap: 20px;
-}
+    .sub_menu .origin button:hover {
+        width: 165px; 
+        height: 46px;
+        text-shadow: var(--sombra-texto);
+        cursor: normal;
+    }
 
-nav ul li {
-    display: inline;
-}
+    .sub_menu nav ul {
+        list-style: none;
+        display:flex;
+        gap: 20px;
+    }
 
-/*tipos de fonte*/
-h1 {
-    font-size: 40px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
+    nav ul li {
+        display: inline;
+    }
 
-h3 {
-    font-size: 22px;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
+/*TIPOS DE FONTE*/
+    h1 {
+        font-size: 40px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
 
-p {
-    color: var(--texto);
-}
+    h3 {    
+        font-size: 22px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
 
-/*conteúdo*/
-.content {
-    margin: 50px 70px;
-}
+    p {
+        color: var(--texto);
+    }
 
-.content .line {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+    div .title {
+        background:var(--losangolo);
+        background-clip: text;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+    }
 
-div .title {
-    background:var(--losangolo);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1.5rem;
-}
+/*CONTEÚDO*/
+    .content {
+        margin: 50px 70px;
+    }
 
-.img img {
-    border-radius: 50px;
-    margin: 3rem;
-}
+    .content .line {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
 
-/*RODAPÉ*/
-footer {
-    width: auto;
-    color: var(--fundo);
-}
+    .content .inline {
+        display: flex;
+        flex-direction: row;
+    }
 
-/*Organização e fundo do rodapé*/
-#footer_content {
-    background: url(imagens/footer/fundo\ do\ rodapé.png);
-    background-size: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 90px;
-    padding: 3rem  7rem;
-    
-}
+    .content .inline .voltar{
+        background-color: var(--botao-principal);
+        color: var(--botão-sub-menu);
+        width: 100px;
+        height: 29px;
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        box-shadow: var(--sombra-button);
+        text-shadow: var(--sombra-texto);
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        align-items: center;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
 
-#footer_title {
-    justify-items: center;
-    margin-top: 25px;
-}
+    .content .inline .voltar:hover{
+        padding: 15px;
+        text-shadow: var(--brilho-texto);
+    }
 
-/*Siga nos*/
-#footer_social_media h3 {
-    margin-bottom: 0.1rem;
-}
+    .content .inline .voltar i{
+        color: rgb(231, 60, 60);
+    }
 
-#footer_social_media {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
+    .img img {
+        border-radius: 50px;
+        box-shadow: var(--sombra-button);
+    }
 
-/*icones*/
-#footer_social_media .footer-link i {
-    font-size: 30px;
-} 
+    .img a img {
+        transition: all 0.3s;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
 
-.footer-link {
-    text-decoration: none;
-}
+    .img a img:hover {
+        width: 101%;
+        height: 101%;
+    }
 
-#footer_social_media .footer-link { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 53px;
-    width: 53px;
-    color: var(--fundo);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
+    .content .texto {
+        margin-bottom: 2rem;
+    }
 
-#footer_social_media .footer-link:hover {
-    box-shadow: 0 0 7px 0 #FFF;
-    width: 57px;
-    height: 57px;
-}
-
-#instagram {
-    background: var(--losangolo);
-}
-
-#facebook {
-    background: var(--losangolo);
-}
-
-#email {
-    background: var(--losangolo);
-}
-
-#titlerodape {
-    padding-bottom: 1.5rem;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    list-style: none;
-}
-
-.footer_list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    text-decoration: none;
-    list-style-type:circle;
-}
-
-.footer_list .footer-link {
-    color: var(--botão-sub-menu); 
-    transition: all 0.4s;
-    text-decoration: none;
-}
-
-.footer_list .footer-link:hover {
-    text-shadow: 0 0 6px #FFF;
-}
-
-#footer_closed_captioning  {
-    display: flex;
-    justify-content: center;
-    background-color: var(--sub-menu);
-    gap: 900px; 
-}
-
-#politica_privacidade {
-    color: var(--fundo);
-}
-
+    .content .img{
+        margin-bottom: 2rem;
+    }
 
 /*RODAPÉ*/
+    footer {
+        width: auto;
+        color: var(--fundo);
+    }
+
+    /*Organização e fundo do rodapé*/
+        #footer_content {
+            background: url(imagens/footer/fundo\ do\ rodapé.png);
+            background-size: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 90px;
+            padding: 3rem  7rem;
+        }
+
+        #footer_title {
+            justify-items: center;
+            margin-top: 25px;
+        }
+
+    /*Siga nos*/
+        #footer_social_media h3 {
+            margin-bottom: 0.1rem;
+        }
+
+        #footer_social_media {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        /*icones*/
+            #footer_social_media .footer-link i {
+                font-size: 30px;
+            } 
+
+    /*links do footer*/
+        .footer-link {
+            text-decoration: none;
+        }
+
+        #footer_social_media .footer-link { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 53px;
+            width: 53px;
+            color: var(--fundo);
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+        #footer_social_media .footer-link:hover {
+            box-shadow: 0 0 7px 0 #FFF;
+            width: 57px;
+            height: 57px;
+        }
+
+        #instagram {
+            background: var(--losangolo);
+        }
+
+        #facebook {
+            background: var(--losangolo);
+        }
+
+        #email {
+            background: var(--losangolo);
+        }
+
+        #titlerodape {
+            padding-bottom: 1.5rem;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            list-style: none;
+        }
+
+        .footer_list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            text-decoration: none;
+            list-style-type:circle;
+        }
+
+        .footer_list .footer-link {
+            color: var(--botão-sub-menu); 
+            transition: all 0.4s;
+            text-decoration: none;
+        }
+
+        .footer_list .footer-link:hover {
+            text-shadow: 0 0 6px #FFF;
+        }
+
+        #footer_closed_captioning  {
+            display: flex;
+            justify-content: center;
+            background-color: var(--sub-menu);
+            gap: 900px; 
+        }
+
+        #politica_privacidade {
+            color: var(--fundo);
+        }
