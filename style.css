@@ -169,11 +169,18 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 28px;
+        align-items: center ;
     }
 
     .content .inline {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+    }
+
+    #voltar{
+        text-decoration: none;
+        color: var(--botão-sub-menu);
     }
 
     .content .inline .voltar{
@@ -222,6 +229,15 @@ body {
 
     .content .texto {
         margin-bottom: 2rem;
+        color: var(--sub-menu);
+    }
+
+    .content .texto li{
+        list-style: circle;
+    }
+
+    .content .texto li a{
+        color: var(--sub-menu);
     }
 
     .content .img{
