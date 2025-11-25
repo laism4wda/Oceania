@@ -244,6 +244,66 @@ body {
         margin-bottom: 2rem;
     }
 
+    /*contato*/
+        #contato {
+            justify-items: center;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.7);
+            width: 509.913px;
+            height: 638.827px;
+            padding: 36px;
+            border-radius: 50px;
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        input {
+            width: 436.839px;
+            height: 69.33px;
+            background: #87A8CB;
+            margin-bottom: 14.5px;
+            border: none;
+            border-radius: 20px;
+            opacity: 0.7;
+            box-shadow: var(--sombra-button);
+        }
+
+        textarea {
+            width: 436.939px;
+            height: 202.44px;
+            background: #87A8CB;
+            resize: none;
+            margin-bottom: 14.5px;
+            border: none;
+            border-radius: 20px;
+            opacity: 0.7;
+            box-shadow: var(--sombra-button);
+        }
+
+        #formContato .enviar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin: 0 auto;
+            width: 176px;
+            height: 58px;
+            background: var(--fundo-menu);
+            color: white;
+            border: none;
+            border-radius: 18px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 23.56px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
 /*RODAPÉ*/
     footer {
         width: auto;
@@ -311,7 +371,7 @@ body {
             background: var(--losangolo);
         }
 
-        #email {
+        #emailfooter {
             background: var(--losangolo);
         }
 
