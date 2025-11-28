@@ -250,13 +250,16 @@ body {
         }
 
         .container {
-            background: rgba(255,255,255,0.7);
-            width: 509.913px;
-            height: 638.827px;
-            padding: 36px;
+            background-image: url(imagens/contato/background.png) ;
+            background-size: 100%;
+            background-position: center;
+            width: 612.358px;
+            height: 726.699px;
             border-radius: 50px;
+            padding: 66px;
             text-align: center;
-            backdrop-filter: blur(8px);
+            box-shadow: var(--sombra-button);
+            
         }
 
         input {
@@ -298,10 +301,12 @@ body {
             cursor: pointer;
             transition: 0.3s;
             margin-bottom: 23.56px;
+            box-shadow: var(--sombra-button);
         }
 
         button:hover {
             transform: scale(1.05);
+            text-shadow: var(--brilho-texto);
         }
 
 /*RODAPÉ*/
