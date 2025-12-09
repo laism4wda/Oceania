@@ -183,7 +183,7 @@ body {
         color: var(--botão-sub-menu);
     }
 
-    .content .inline .voltar{
+    .voltar{
         background-color: var(--botao-principal);
         color: var(--botão-sub-menu);
         width: 100px;
@@ -197,16 +197,17 @@ body {
         flex-direction: row;
         gap: 7px;
         align-items: center;
+        justify-content: center;
         transition: all 0.3s;
         cursor: pointer;
     }
 
-    .content .inline .voltar:hover{
-        padding: 15px;
+    .voltar:hover{
         text-shadow: var(--brilho-texto);
+        transform: scale(1.05);
     }
 
-    .content .inline .voltar i{
+    .voltar i{
         color: rgb(231, 60, 60);
     }
 
@@ -244,6 +245,69 @@ body {
         margin-bottom: 2rem;
     }
 
+    /*curiosidades*/
+    .cards-container{
+        display:flex;
+        justify-content:center;
+        gap:25px;
+        margin-bottom:35px;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width:400px;
+        height:250px;
+        border-radius:12px;
+        overflow:hidden;
+        position:relative;
+        cursor:pointer;
+        transition: transform .2s;
+        background: #eeeeee00;
+        object-fit: cover;
+    }
+
+    .bloco p {
+        text-align:center;
+    }
+
+    .bloco img{
+        width: 520px;
+        height: 220px;
+        object-fit:cover;
+        border-radius:20px;
+    }
+
+    .bloco{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        max-width:950px;
+        margin:auto;
+        margin-bottom:60px;
+        gap:25px;
+    }
+
+    .card:hover{
+        transform: scale(1.03);
+    }
+
+    .card img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .card-text{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        background: rgba(0, 0, 0, 0.445);
+        color:#fff;
+        font-size:17px;
+        padding:10px;
+        text-align:left;
+    }
+
     /*contato*/
         #contato {
             justify-items: center;
@@ -253,16 +317,16 @@ body {
             background-image: url(imagens/contato/background.png) ;
             background-size: 100%;
             background-position: center;
-            width: 612.358px;
-            height: 726.699px;
-            border-radius: 50px;
+            width: 509.913px;
+            height: 600px;
+            border-radius: 60px;
             padding: 66px;
             text-align: center;
             box-shadow: var(--sombra-button);
             
         }
 
-        input {
+        .input-formContato {
             width: 436.839px;
             height: 69.33px;
             background: #87A8CB;
@@ -271,9 +335,25 @@ body {
             border-radius: 20px;
             opacity: 0.7;
             box-shadow: var(--sombra-button);
+            transition: 0.3s;
+            padding-left: 20px;
+        }
+        .input-formContato:hover {
+            border-style: solid;
+            border-color: var(--texto);
+            border-width: 1.5px;
         }
 
-        textarea {
+        .input-formContato:focus {
+            padding-left: 20px;
+        }
+
+        .textarea-formContato:focus {
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .textarea-formContato {
             width: 436.939px;
             height: 202.44px;
             background: #87A8CB;
@@ -283,6 +363,15 @@ body {
             border-radius: 20px;
             opacity: 0.7;
             box-shadow: var(--sombra-button);
+            transition: 0.3s;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .textarea-formContato:hover {
+            border-style: solid;
+            border-color: var(--texto);
+            border-width: 1.5px;
         }
 
         #formContato .enviar {
@@ -301,6 +390,7 @@ body {
             cursor: pointer;
             transition: 0.3s;
             margin-bottom: 23.56px;
+            margin-top: 20px;
             box-shadow: var(--sombra-button);
         }
 
@@ -309,10 +399,31 @@ body {
             text-shadow: var(--brilho-texto);
         }
 
+        .input-formContato::placeholder {
+            color: var(--texto);
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .input-formContato:hover::placeholder, textarea:hover::placeholder {
+            font-weight: bold;
+        }
+
+        .input-formContato:focus::placeholder, .textarea-formContato:focus::placeholder {
+            opacity: 0;
+        }
+
+        .textarea-formContato::placeholder {
+            color: var(--texto);
+            text-align: left;
+            transition: 0.3s;
+        }
+
 /*RODAPÉ*/
     footer {
         width: auto;
         color: var(--fundo);
+        margin-top: 50px;
     }
 
     /*Organização e fundo do rodapé*/
