@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro da Instituição</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+
+<body>
+
+    <div class="cadastro-container" align="center">
+        
+        <h1 style="padding: 5rem;">Faça Seu Cadastro</h1>
+
+        <form class="cadastro-form" action="cadastro_sucesso.html" style="justify-content: center;">
+            <div style="margin-bottom: 1rem;">
+                <label><b>Nome da Instituição:</b></label>
+                <input type="text" required>
+            </div>
+
+            <div class="cadastro-inline" >
+                <div style="width: 50%; margin-bottom: 1rem;">
+                    <label><b>Endereço:</b></label>
+                    <input type="text" required>
+                </div>
+
+                <div style="width: 50%; margin-bottom: 1rem;" >
+                    <label><b>CNPJ:</b></label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <div class="cadastro-inline" >
+                <div style="width: 50%; margin-bottom: 1rem;">
+                    <label><b>E-mail:</b></label>
+                    <input type="email" required>
+                </div>
+
+                <div style="width: 50%; margin-bottom: 1rem;">
+                    <label><b>CPF:</b></label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label><b>Anexo do Arquivo:</b></label>
+                <input type="file" required>
+            </div>
+
+            <p style="font-size: 15px; margin-top: -10px;">
+                <a href="como_enviar_arquivo.html" style="color:#0A5D90; text-decoration:none;">
+                      <b>❓ Como enviar meu arquivo?</b>
+                </a>
+            </p>
+
+
+            <div class="cadastro-enviar" id="formContato">
+                <button type="submit" class="enviar"><b>Enviar >></b></button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div align="center" style="margin-top: 25px;">
+            <button class="voltar"><a href="instituicoes.html" id="voltar">
+                Voltar </a><i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+
+</body>
+</html>
